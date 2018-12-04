@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show JS Flowchart</title>
+</head>
+<body>
+  <form id="form-file" name="formFile">
+    <input type="file" id="input-file"/>
+  </form>
+
+  <form id="form-level" name="formLevel">
+    <input type="checkbox" id="func" name="box-func" /><label for="func">FUNCTION</label>
+    <input type="checkbox" id="func-dep" name="box-funcdep"><label for="func-dep">FUNCTION_DEPENDENCIES</label>
+    <input type="checkbox" id="class" name="box-class"><label for="class">CLASS</label>
+    <input type="checkbox" id="import" name="box-import"><label for="import">IMPORT</label>
+    <input type="checkbox" id="export" name="box-export"><label for="export">EXPORT</label>
+    <input type="submit" title="提交">
+  </form>
+  <div>
+      <p id="svgImage"></p>
+  </div>
+
+  <script src="./lib/js2flowchart.js"></script>
+  <script src="code-sample.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
