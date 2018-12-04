@@ -1,15 +1,15 @@
-let code = `
-    import {format, trim} from 'formattier';
-    import {log} from 'logger';
 
-    const data = [];
+import {format, trim} from 'formattier';
+import {log} from 'logger';
 
-    export default print = (list) => {
-        list.forEach(i => {
-            console.log(i);
-        });
-    }
+const data = [];
 
-    export const formatString = (str) => formatter(str);
-    export const MAX_STR_LENGTH = 15;
-`;
+export default print = (list) => {
+    list.forEach(i => {
+        console.log(i);
+    });
+}
+
+export const formatString = (str) => formatter(str);
+export const MAX_STR_LENGTH = 15;
+
